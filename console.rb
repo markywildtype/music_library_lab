@@ -26,6 +26,12 @@ album2.save()
 artists = Artist.all
 albums = Album.all
 
+artist1.name = 'Mon the Biff'
+artist1.update()
+
+artists = Artist.all
+albums = Album.all
+
 artist_albums = artist1.albums()
 
 album_artist = album1.artist()
