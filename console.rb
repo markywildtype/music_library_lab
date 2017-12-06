@@ -6,7 +6,12 @@ artist1 = Artist.new({
   'name' => 'Biffy Clyro'
 })
 
+artist2 = Artist.new({
+  'name' => 'Arcane Roots'
+})
+
 artist1.save()
+artist2.save()
 
 album1 = Album.new({
   'title' => 'The Vertigo of Bliss',
@@ -20,8 +25,15 @@ album1 = Album.new({
     'artist_id' => artist1.id
     })
 
+  album3 = Album.new({
+    'title' => 'Melancholia Hymns',
+    'genre' => 'Progressive Post-Hardcore',
+    'artist_id' => artist2.id
+    })
+
 album1.save()
 album2.save()
+album3.save()
 
 artists = Artist.all
 albums = Album.all
@@ -35,6 +47,8 @@ album2.update_title()
 
 artists = Artist.all
 albums = Album.all
+
+Album.delete('Pooposites')
 
 artist_albums = artist1.albums()
 

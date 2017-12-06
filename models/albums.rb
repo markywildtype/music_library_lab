@@ -46,4 +46,10 @@ class Album
     SqlRunner.run(sql, values)
   end
 
+  def Album.delete(album)
+    sql = "DELETE FROM albums WHERE title = $1;"
+    values = [album]
+    SqlRunner.run(sql, values)
+  end
+
 end
