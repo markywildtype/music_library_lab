@@ -16,6 +16,8 @@ artist2 = Artist.new({
 artist1.save()
 artist2.save()
 
+# Artist.delete('Biffy Clyro', artist1.id)
+
 album1 = Album.new({
   'title' => 'The Vertigo of Bliss',
   'genre' => 'Alternative Rock',
@@ -53,7 +55,6 @@ albums = Album.all
 
 # Album.delete('Pooposites')
 
-# Artist.delete('Biffy Clyro', artist1.id)
 
 artist_albums = artist1.albums()
 artist_albums2 = artist2.albums()
