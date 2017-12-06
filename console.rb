@@ -28,5 +28,7 @@ albums = Album.all
 
 artist_albums = artist1.albums()
 
+album_artist = album1.artist()
+
 binding.pry
 nil
