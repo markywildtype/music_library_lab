@@ -49,10 +49,13 @@ artists = Artist.all
 albums = Album.all
 
 Album.delete('Pooposites')
+# Artist.delete('Biffy Clyro', artist1.id)
 
 artist_albums = artist1.albums()
 
 album_artist = album1.artist()
+
+find_artist = Artist.find_by_id(37)
 
 binding.pry
 nil
