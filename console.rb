@@ -14,10 +14,19 @@ album1 = Album.new({
   'artist_id' => artist1.id
   })
 
+  album2 = Album.new({
+    'title' => 'Opposites',
+    'genre' => 'Alternative Rock',
+    'artist_id' => artist1.id
+    })
+
 album1.save()
+album2.save()
 
 artists = Artist.all
 albums = Album.all
+
+artist_albums = artist1.albums()
 
 binding.pry
 nil
