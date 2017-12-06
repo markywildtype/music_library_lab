@@ -16,5 +16,7 @@ album1 = Album.new({
 
 album1.save()
 
+artists = Artist.all
+
 binding.pry
 nil
