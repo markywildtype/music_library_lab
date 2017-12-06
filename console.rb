@@ -56,6 +56,7 @@ artist_albums = artist1.albums()
 album_artist = album1.artist()
 
 find_artist = Artist.find_by_id(37)
+find_album = Album.find_by_id(51)
 
 binding.pry
 nil
