@@ -34,4 +34,10 @@ class Album
     return artist_object
   end
 
+  def update_genre()
+    sql = "UPDATE albums SET (genre) = ($1) WHERE id = $2"
+    values = [@genre, @id]
+    SqlRunner.run(sql, values)
+  end
+
 end

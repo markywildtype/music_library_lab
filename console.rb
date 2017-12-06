@@ -28,6 +28,8 @@ albums = Album.all
 
 artist1.name = 'Mon the Biff'
 artist1.update()
+album2.genre = 'Slightly Lame Rock'
+album2.update_genre()
 
 artists = Artist.all
 albums = Album.all
